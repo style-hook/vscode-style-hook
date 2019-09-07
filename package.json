@@ -1,14 +1,14 @@
 {
-  "name": "vscode-styled-components",
-  "displayName": "vscode-styled-components",
-  "description": "Syntax highlighting for styled-components",
-  "version": "0.0.26",
-  "publisher": "jpoissonnier",
+  "name": "style-hook",
+  "displayName": "style-hook",
+  "description": "Syntax Highlighting and IntelliSense for Style-Hook",
+  "version": "0.1.1",
+  "publisher": "coppy",
   "icon": "logo.png",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/styled-components/vscode-styled-components.git"
+    "url": "https://github.com/style-hook/vscode-style-hook"
   },
   "engines": {
     "vscode": "^1.5.0"
@@ -24,18 +24,18 @@
   "contributes": {
     "languages": [
       {
-        "id": "source.css.styled",
+        "id": "source.css.style",
         "aliases": [
-          "CSS (Styled Components)"
+          "CSS (Style Hook)"
         ],
-        "configuration": "./css.styled.configuration.json"
+        "configuration": "./css.style.configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "source.css.styled",
-        "scopeName": "source.css.styled",
-        "path": "./syntaxes/css.styled.json"
+        "language": "source.css.style",
+        "scopeName": "source.css.style",
+        "path": "./syntaxes/css.style.json"
       },
       {
         "injectTo": [
@@ -46,8 +46,8 @@
           "source.tsx",
           "source.vue"
         ],
-        "scopeName": "styled",
-        "path": "./syntaxes/styled-components.json",
+        "scopeName": "style-hook",
+        "path": "./syntaxes/style-hook.json",
         "embeddedLanguages": {
           "source.css.scss": "css",
           "meta.embedded.line.ts": "typescript"
@@ -56,13 +56,13 @@
     ],
     "typescriptServerPlugins": [
       {
-        "name": "typescript-styled-plugin",
+        "name": "typescript-style-hook-plugin",
         "enableForWorkspaceTypeScriptVersions": true
       }
     ]
   },
   "dependencies": {
-    "typescript-styled-plugin": "0.14.0"
+    "typescript-style-hook-plugin": "*"
   },
   "devDependencies": {
     "prettier": "^1.14.3",

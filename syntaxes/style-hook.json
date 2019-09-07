@@ -1,0 +1,64 @@
+{
+  "fileTypes": ["js", "jsx", "ts", "tsx", "vue"],
+  "injectionSelector": "L:source -comment -string",
+  "patterns": [
+    {
+      "contentName": "source.css.scss",
+      "begin": "useStyle\\s*(`)",
+      "beginCaptures": {
+        "1": {
+          "patterns": [
+            {
+              "include": "source.ts#expression"
+            }
+          ]
+        },
+        "2": {
+          "name": "entity.name.function.tagged-template.js"
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js string.template.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.style"
+        }
+      ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "([mM][eE][dD][iI][aA]\\.[[:alpha:]][[:alnum:]]*(?:\\(.*?\\))?)\\s*(`)",
+      "beginCaptures": {
+        "1": {
+          "patterns": [
+            {
+              "include": "source.ts#expression"
+            }
+          ]
+        },
+        "2": {
+          "name": "punctuation.definition.string.template.begin.js string.template.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.template.end.js string.template.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.style"
+        }
+      ]
+    }
+  ],
+  "scopeName": "style-hook"
+}
