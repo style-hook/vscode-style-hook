@@ -4,7 +4,7 @@
   "patterns": [
     {
       "contentName": "source.css.scss",
-      "begin": "useStyle\\s*(`)",
+      "begin": "(useStyle|useGlobalStyle|useModuleStyle|css)\\s*(`)",
       "beginCaptures": {
         "1": {
           "patterns": [

@@ -2,7 +2,7 @@
   "name": "style-hook",
   "displayName": "style-hook",
   "description": "Syntax Highlighting and IntelliSense for Style-Hook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "coppy",
   "icon": "logo.png",
   "license": "MIT",
@@ -62,7 +62,7 @@
     ]
   },
   "dependencies": {
-    "typescript-style-hook-plugin": "*"
+    "typescript-style-hook-plugin": "0.0.3"
   },
   "devDependencies": {
     "prettier": "^1.14.3",
