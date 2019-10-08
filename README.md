@@ -7,6 +7,9 @@ Uses a CSS grammar built on top of [language-sass](https://github.com/atom/langu
 
 [[Github Source](https://github.com/style-hook/vscode-style-hook)]
 
+## feedback
+[[Github Issue](https://github.com/style-hook/vscode-style-hook/pulls)]
+
 ## preview
 ![Syntax highlighting in action](preview.png)
 
