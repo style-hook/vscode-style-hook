@@ -76,9 +76,7 @@ export function activate(context: ExtensionContext) {
   ];
 
   context.subscriptions.push(
-      languages.registerCompletionItemProvider(mode, new ClassNameCompletionProvider(), '"', ' '),
-      languages.registerCompletionItemProvider(mode, new CSSModuleCompletionProvider(), '.'),
-      // languages.registerCompletionItemProvider(mode, new CSSModuleCompletionProvider(), '\\.'),
+      languages.registerCompletionItemProvider(mode, new ClassNameCompletionProvider(), '"', ' ')
   );
 
 }

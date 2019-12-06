@@ -2,7 +2,7 @@
   "name": "style-hook",
   "displayName": "style-hook",
   "description": "Syntax Highlighting and IntelliSense for Style-Hook",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "publisher": "coppy",
   "icon": "logo.png",
   "main": "./dist/index.js",
@@ -26,6 +26,7 @@
   "activationEvents": [
     "onLanguage:typescriptreact",
     "onLanguage:javascriptreact",
+    "onLanguage:typescript",
     "onLanguage:javascript"
   ],
   "contributes": {
@@ -50,8 +51,7 @@
           "source.ts",
           "source.jsx",
           "source.js.jsx",
-          "source.tsx",
-          "source.vue"
+          "source.tsx"
         ],
         "scopeName": "style-hook",
         "path": "./syntaxes/style-hook.json",
@@ -69,7 +69,7 @@
     ]
   },
   "dependencies": {
-    "typescript-style-hook-plugin": "0.0.3"
+    "typescript-style-hook-plugin": "^0.1.0"
   },
   "devDependencies": {
     "@types/vscode": "^1.38.0",

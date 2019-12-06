@@ -17,13 +17,20 @@ jsonc-parser@^1.0.0:
   resolved "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-1.0.3.tgz#1d53d7160e401a783dbceabaad82473f80e6ad7e"
   integrity sha512-hk/69oAeaIzchq/v3lS50PXuzn5O2ynldopMC+SWBql7J2WtdptfB9dy8Y7+Og5rPkTCpn83zTiO8FMcqlXJ/g==
 
-typescript-style-hook-plugin@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/typescript-style-hook-plugin/-/typescript-style-hook-plugin-0.0.3.tgz#c2f55492c0304b0b5c662ff6cf700164b5fc3f42"
-  integrity sha512-TNePSjDsb2MgsivVjpp4E0bV541D/q2WixG+XsaQx88Yl671Fko2csb7w67lL9cKmweSEIgOLGmF390HmriIuQ==
+typescript-style-hook-plugin@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/typescript-style-hook-plugin/download/typescript-style-hook-plugin-0.1.0.tgz#2efad812232244f2d5ab879beb8f81909102e507"
+  integrity sha1-LvrYEiMiRPLVq4eb64+BkJEC5Qc=
+  dependencies:
+    typescript-styled-plugin "^0.15.0"
+
+typescript-styled-plugin@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.npm.taobao.org/typescript-styled-plugin/download/typescript-styled-plugin-0.15.0.tgz#9e307f04f7cfab8c6319787bf854330326c9ba92"
+  integrity sha1-njB/BPfPq4xjGXh7+FQzAybJupI=
   dependencies:
     typescript-template-language-service-decorator "^2.2.0"
-    vscode-css-languageservice "^3.0.13"
+    vscode-css-languageservice "^4.0.2"
     vscode-emmet-helper "1.2.11"
     vscode-languageserver-types "^3.13.0"
 
@@ -37,13 +44,13 @@ typescript@^3.6.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
   integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
 
-vscode-css-languageservice@^3.0.13:
-  version "3.0.13"
-  resolved "https://registry.npmjs.org/vscode-css-languageservice/-/vscode-css-languageservice-3.0.13.tgz#1788735b65fde54181ea458e6a52cc2bd6dd9126"
-  integrity sha512-RWkO/c/A7iXhHEy3OuEqkCqavDjpD4NF2Ca8vjai+ZtEYNeHrm1ybTnBYLP4Ft1uXvvaaVtYA9HrDjD6+CUONg==
+vscode-css-languageservice@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npm.taobao.org/vscode-css-languageservice/download/vscode-css-languageservice-4.0.2.tgz#7496e538b0c151feac16d5888cc0b1b104f4c736"
+  integrity sha1-dJblOLDBUf6sFtWIjMCxsQT0xzY=
   dependencies:
-    vscode-languageserver-types "^3.13.0"
-    vscode-nls "^4.0.0"
+    vscode-languageserver-types "^3.15.0-next.2"
+    vscode-nls "^4.1.1"
 
 vscode-emmet-helper@1.2.11:
   version "1.2.11"
@@ -59,7 +66,12 @@ vscode-languageserver-types@^3.13.0, vscode-languageserver-types@^3.6.0-next.1:
   resolved "https://registry.npmjs.org/vscode-languageserver-types/-/vscode-languageserver-types-3.14.0.tgz#d3b5952246d30e5241592b6dde8280e03942e743"
   integrity sha512-lTmS6AlAlMHOvPQemVwo3CezxBp0sNB95KNPkqp3Nxd5VFEnuG1ByM0zlRWos0zjO3ZWtkvhal0COgiV1xIA4A==
 
-vscode-nls@^4.0.0:
+vscode-languageserver-types@^3.15.0-next.2:
+  version "3.15.0-next.9"
+  resolved "https://registry.npm.taobao.org/vscode-languageserver-types/download/vscode-languageserver-types-3.15.0-next.9.tgz#957a9d1d5998a02edf62298fb7e37d9efcc6c157"
+  integrity sha1-lXqdHVmYoC7fYimPt+N9nvzGwVc=
+
+vscode-nls@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.npmjs.org/vscode-nls/-/vscode-nls-4.1.1.tgz#f9916b64e4947b20322defb1e676a495861f133c"
-  integrity sha512-4R+2UoUUU/LdnMnFjePxfLqNhBS8lrAFyX7pjb2ud/lqDkrUavFUTcG7wR0HBZFakae0Q6KLBFjMS6W93F403A==
+  resolved "https://registry.npm.taobao.org/vscode-nls/download/vscode-nls-4.1.1.tgz#f9916b64e4947b20322defb1e676a495861f133c"
+  integrity sha1-+ZFrZOSUeyAyLe+x5naklYYfEzw=
